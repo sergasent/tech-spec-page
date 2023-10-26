@@ -2,7 +2,7 @@
 @import '../../constants/mixines.scss';
 
 .header {
-  min-height: 46px;
+  min-height: 44px;
   padding-top: 32px;
   display: flex;
   justify-content: space-between;
@@ -16,6 +16,7 @@
     list-style-type: none;
 
     &_type_main {
+      padding-top: 1px;
       gap: 35.1px;
     }
 
@@ -29,6 +30,8 @@
     text-decoration: none;
 
     &_type_language {
+      @include main-link-typography;
+      line-height: 1.25;
       color: $color-blue-gray;
     }
   }
@@ -48,11 +51,7 @@
     }
 
     &_type_aside {
-      font-family: $font-second;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 1.375;
+      @include aside-link-typography;
 
       &:link,
       &:visited {

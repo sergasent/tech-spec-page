@@ -24,6 +24,14 @@
   font-weight: 500;
 }
 
+@mixin aside-link-typography {
+  font-family: $font-second;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.375;
+}
+
 @mixin accent-title-typography {
   font-family: $font-accent;
   font-size: 48px;

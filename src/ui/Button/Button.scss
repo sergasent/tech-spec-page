@@ -1,0 +1,44 @@
+@import '../../constants/variables.scss';
+@import '../../constants/mixines.scss';
+
+.button {
+  @include link-hover;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+
+  &_type_main {
+    @include main-link-typography;
+    padding-left: 26px;
+    padding-right: 27px;
+    line-height: 1.375;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    background-color: $color-main-purple;
+    color: $color-main-white;
+    box-shadow: 0px 20px 35px 0px #dfe8f4;
+  }
+
+  &_type_aside {
+    @include aside-link-typography;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 1.375;
+    padding-top: 11px;
+    padding-bottom: 12px;
+    background-color: $color-main-blue;
+    color: $color-main-white;
+  }
+
+  &_type_moove {
+    min-width: 54px;
+    min-height: 54px;
+    border: 1px solid $color-light-gray;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+  }
+}

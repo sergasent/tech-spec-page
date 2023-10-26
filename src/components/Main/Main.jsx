@@ -1,6 +1,8 @@
 import './Main.scss';
 import AsideHeader from '../AsideHeader/AsideHeader';
 import MainHeader from '../MainHeader/MainHeader';
+import Button from '../../ui/Button/Button';
+import downImage from '../../assets/bi_arrow-down-short.svg';
 
 const Main = () => {
   return (
@@ -16,6 +18,12 @@ const Main = () => {
               Профессиональное техническое сопровождение и обслуживание сайтов:
               полный комплекс услуг от опытных экспертов
             </p>
+            <Button className="main-section__button button_type_main">
+              Подключиться
+            </Button>
+            <Button className="button_type_moove">
+              <img src={downImage} alt="Далее" />
+            </Button>
           </main>
         </section>
       </div>

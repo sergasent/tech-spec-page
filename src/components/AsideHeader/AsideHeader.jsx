@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
+import Button from '../../ui/Button/Button';
 
 const AsideHeader = () => {
   return (
     <Header>
       <Link className="header__link header__link_type_language">En</Link>
       <nav>
-        <ul className="header__nav-list header__nav-list_type_main">
+        <ul className="header__nav-list header__nav-list_type_aside">
           <li>
             <a
               href="tel:+74951234567"
@@ -16,7 +17,7 @@ const AsideHeader = () => {
             </a>
           </li>
           <li>
-            <button>Контакты</button>
+            <Button className="button_type_aside">Контакты</Button>
           </li>
         </ul>
       </nav>
