@@ -1,0 +1,9 @@
+@import '../../constants/mixines.scss';
+
+.logo {
+  @include link-hover;
+
+  &__image {
+    display: block;
+  }
+}

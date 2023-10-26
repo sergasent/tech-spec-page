@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
+import Logo from '../Logo/Logo';
 
 const MainHeader = () => {
   return (
     <Header>
-      <img className="logo" src="" alt="logo" />
+      <Logo />
       <nav>
         <ul className="header__nav-list header__nav-list_type_main">
           <li>
