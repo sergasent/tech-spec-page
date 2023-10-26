@@ -30,8 +30,19 @@ const App = () => {
             </ul>
           </nav>
         </header>
+        <main className="main-section__main">
+          <h1 className="main-section__title">
+            Техническая поддержка сайтов, CRM систем и мобильных приложений
+          </h1>
+          <p className="main-section__subtitle">
+            Профессиональное техническое сопровождение и обслуживание сайтов:
+            полный комплекс услуг от опытных экспертов
+          </p>
+        </main>
       </section>
-      <section className="aside-section"></section>
+      <section className="aside-section" aria-label="Контакты">
+        <header className="header header_type_aside"></header>
+      </section>
     </div>
   );
 };
