@@ -1,0 +1,64 @@
+/* inter-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./inter-v13-cyrillic_latin-regular.eot');
+  src:
+    local(''),
+    url('./inter-v13-cyrillic_latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('./inter-v13-cyrillic_latin-regular.woff2') format('woff2'),
+    url('./inter-v13-cyrillic_latin-regular.woff') format('woff'),
+    url('./inter-v13-cyrillic_latin-regular.ttf') format('truetype'),
+    url('./inter-v13-cyrillic_latin-regular.svg#Inter') format('svg');
+}
+
+/* inter-600 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./inter-v13-cyrillic_latin-600.eot');
+  src:
+    local(''),
+    url('./inter-v13-cyrillic_latin-600.eot?#iefix') format('embedded-opentype'),
+    url('./inter-v13-cyrillic_latin-600.woff2') format('woff2'),
+    url('./inter-v13-cyrillic_latin-600.woff') format('woff'),
+    url('./inter-v13-cyrillic_latin-600.ttf') format('truetype'),
+    url('./inter-v13-cyrillic_latin-600.svg#Inter') format('svg');
+}
+
+/* SF Pro Display - 600 */
+@font-face {
+  font-display: swap;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./SF_Pro_Display_Semibold.eot');
+  src:
+    local(''),
+    url('./SF_Pro_Display_Semibold.eot?#iefix') format('embedded-opentype'),
+    url('./SF_Pro_Display_Semibold.woff2') format('woff2'),
+    url('./SF_Pro_Display_Semibold.woff') format('woff'),
+    url('./SF_Pro_Display_Semibold.ttf') format('truetype'),
+    url('./SF_Pro_Display_Semibold.svg') format('svg');
+}
+
+/* SF Pro Text - 500 */
+@font-face {
+  font-display: swap;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./SF_Pro_Text_Medium.eot');
+  src:
+    local(''),
+    url('./SF_Pro_Text_Medium.eot?#iefix') format('embedded-opentype'),
+    url('./SF_Pro_Text_Medium.woff2') format('woff2'),
+    url('./SF_Pro_Text_Medium.woff') format('woff'),
+    url('./SF_Pro_Text_Medium.ttf') format('truetype'),
+    url('./SF_Pro_Text_Medium.svg') format('svg');
+}
