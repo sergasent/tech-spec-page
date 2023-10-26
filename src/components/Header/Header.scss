@@ -9,11 +9,10 @@
   align-items: center;
 
   &__nav-list {
-    @include clear-margin-padding;
+    @include clear-list-style;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style-type: none;
 
     &_type_main {
       padding-top: 1px;
@@ -30,7 +29,7 @@
     text-decoration: none;
 
     &_type_language {
-      @include main-link-typography;
+      @include main-text-typography;
       line-height: 1.25;
       color: $color-blue-gray;
     }
@@ -41,7 +40,7 @@
     text-decoration: none;
 
     &_type_main {
-      @include main-link-typography;
+      @include main-text-typography;
       line-height: 1.25;
 
       &:link,
@@ -51,7 +50,8 @@
     }
 
     &_type_aside {
-      @include aside-link-typography;
+      @include secondary-text-typography;
+      line-height: 1.375;
 
       &:link,
       &:visited {

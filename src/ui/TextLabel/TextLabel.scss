@@ -1,0 +1,16 @@
+@import '../../constants/variables.scss';
+@import '../../constants/mixines.scss';
+
+.text-label {
+  @include clear-margin-padding;
+  @include secondary-text-typography;
+  line-height: 1.25;
+  color: $color-dark-gray;
+
+  &_type_block {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 13px;
+  }
+}

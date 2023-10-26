@@ -3,6 +3,8 @@
 $color-dark-gray: #5f6b77;
 $color-main-white: #ffffff;
 $color-blue-gray: #8b9fcc;
+$color-dark-purple: #08123a;
+$color-second-purple: #506ccf;
 
 // Container Colors
 
@@ -11,7 +13,7 @@ $color-background-gray: #f5f9ff;
 
 // Buttons Colors
 
-$color-main-purple: #506ccf;
+$color-main-purple: #506bcf;
 $color-main-blue: #49a1f1;
 $color-light-gray: #e9eaf0;
 
@@ -25,3 +27,15 @@ $font-accent: 'SF Pro Display', Arial, sans-serif;
 
 $link-hover-opacity: 0.7;
 $link-hover-transition: 0.3s ease;
+
+// Popups
+
+$visibility-transition:
+  visibility 0s linear 0.3s,
+  opacity 0.3s;
+
+$visibility-opened-transition:
+  visibility 0s linear 0s,
+  opacity 0.3s;
+
+$color-background-padding: #1721445d;

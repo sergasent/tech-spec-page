@@ -1,0 +1,83 @@
+@import '../../constants/variables.scss';
+@import '../../constants/mixines.scss';
+
+.contacts-popup {
+  &__section-title {
+    @include clear-margin-padding;
+    @include secondary-text-typography;
+    line-height: 1.25;
+  }
+
+  &__address {
+    margin-bottom: 43px;
+    margin-left: 5px;
+  }
+
+  &__contacts {
+    margin-bottom: 38px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__business-time {
+    margin-bottom: 26px;
+  }
+
+  &__map-link {
+    @include link-hover;
+    @include secondary-text-typography;
+    padding-top: 7px;
+    line-height: 1.25;
+    display: block;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+
+    &:link,
+    &:visited {
+      color: $color-second-purple;
+    }
+  }
+
+  &__contacts-container {
+    @include clear-list-style;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__contact {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__contact-link {
+    @include link-hover;
+    @include secondary-text-typography;
+    line-height: 1.25;
+    text-decoration: none;
+    color: $color-dark-purple;
+  }
+
+  &__social-container {
+    @include clear-list-style;
+    display: flex;
+    gap: 18px;
+  }
+
+  &__social-link {
+    @include link-hover;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $color-light-gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // transition: border-color 0.3s ease;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}

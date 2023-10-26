@@ -5,6 +5,13 @@
   padding: 0;
 }
 
+// Lists
+
+@mixin clear-list-style {
+  @include clear-margin-padding;
+  list-style-type: none;
+}
+
 // Links
 
 @mixin link-hover {
@@ -17,19 +24,18 @@
 
 // Typography
 
-@mixin main-link-typography {
+@mixin main-text-typography {
   font-family: $font-main;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
 }
 
-@mixin aside-link-typography {
+@mixin secondary-text-typography {
   font-family: $font-second;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 1.375;
 }
 
 @mixin accent-title-typography {
@@ -47,4 +53,18 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.4;
+}
+
+// Popups
+
+@mixin popup-closed-state {
+  visibility: hidden;
+  opacity: 0;
+  transition: $visibility-transition;
+}
+
+@mixin popup-opened-state {
+  visibility: visible;
+  opacity: 1;
+  transition: $visibility-opened-transition;
 }
