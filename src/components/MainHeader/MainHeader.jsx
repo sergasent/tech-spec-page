@@ -3,7 +3,7 @@ import Header from '../Header/Header';
 
 const MainHeader = () => {
   return (
-    <Header className="header_type_main">
+    <Header>
       <img className="logo" src="" alt="logo" />
       <nav>
         <ul className="header__nav-list header__nav-list_type_main">

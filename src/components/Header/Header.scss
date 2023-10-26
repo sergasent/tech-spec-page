@@ -3,19 +3,10 @@
 
 .header {
   min-height: 46px;
-  padding-top: 28px;
+  padding-top: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  &_type_main {
-    padding-right: 50px;
-  }
-
-  &_type_aside {
-    padding-right: 40px;
-    padding-left: 23px;
-  }
 
   &__nav-list {
     @include clear-margin-padding;
@@ -25,7 +16,7 @@
     list-style-type: none;
 
     &_type_main {
-      gap: 35px;
+      gap: 35.1px;
     }
 
     &_type_aside {

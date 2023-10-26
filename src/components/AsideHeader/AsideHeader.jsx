@@ -3,7 +3,7 @@ import Header from '../Header/Header';
 
 const AsideHeader = () => {
   return (
-    <Header className="header_type_aside">
+    <Header>
       <Link className="header__link header__link_type_language">En</Link>
       <nav>
         <ul className="header__nav-list header__nav-list_type_main">
