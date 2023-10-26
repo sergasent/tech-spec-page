@@ -1,0 +1,72 @@
+@import '../../constants/variables.scss';
+@import '../../constants/mixines.scss';
+
+.header {
+  min-height: 46px;
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_type_main {
+    padding-right: 50px;
+  }
+
+  &_type_aside {
+    padding-right: 40px;
+    padding-left: 23px;
+  }
+
+  &__nav-list {
+    @include clear-margin-padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+    &_type_main {
+      gap: 35px;
+    }
+
+    &_type_aside {
+      gap: 15px;
+    }
+  }
+
+  &__link {
+    @include link-hover;
+    text-decoration: none;
+
+    &_type_language {
+      color: $color-blue-gray;
+    }
+  }
+
+  &__nav-link {
+    @include link-hover;
+    text-decoration: none;
+
+    &_type_main {
+      @include main-link-typography;
+      line-height: 1.25;
+
+      &:link,
+      &:visited {
+        color: $color-dark-gray;
+      }
+    }
+
+    &_type_aside {
+      font-family: $font-second;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.375;
+
+      &:link,
+      &:visited {
+        color: $color-main-white;
+      }
+    }
+  }
+}

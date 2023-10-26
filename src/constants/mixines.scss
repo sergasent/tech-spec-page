@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+@mixin clear-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+// Links
+
+@mixin link-hover {
+  transition: $link-hover-transition;
+
+  &:hover {
+    opacity: $link-hover-opacity;
+  }
+}
+
+// Typography
+
+@mixin main-link-typography {
+  font-family: $font-main;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
