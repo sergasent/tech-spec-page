@@ -3,6 +3,8 @@ import PrettyContainer from '../PrettyContainer/PrettyContainer';
 import PrettyDiagramm from '../PrettyDiagramm/PrettyDiagramm';
 
 const PrettyAnalitics = () => {
+  const rectHeight = 11;
+  const rectBorderRadius = 4;
   return (
     <PrettyContainer className="pretty-container_size_medium pretty-container_type_analitics">
       <h2 className="pretty-container__title">Аналитика</h2>
@@ -11,12 +13,12 @@ const PrettyAnalitics = () => {
         <li>
           <LabeledPoint
             pointColor="purple"
-            rectHeight="11"
-            rectBorderRadius="4"
+            rectHeight={rectHeight}
+            rectBorderRadius={rectBorderRadius}
             labels={[
               {
-                labelColor: 'light-gray',
-                labelWidth: '75',
+                labelColor: 'medium-gray',
+                labelWidth: 75,
               },
             ]}
           />
@@ -24,12 +26,12 @@ const PrettyAnalitics = () => {
         <li>
           <LabeledPoint
             pointColor="green"
-            rectHeight="11"
-            rectBorderRadius="4"
+            rectHeight={rectHeight}
+            rectBorderRadius={rectBorderRadius}
             labels={[
               {
-                labelColor: 'light-gray',
-                labelWidth: '37',
+                labelColor: 'medium-gray',
+                labelWidth: 37,
               },
             ]}
           />

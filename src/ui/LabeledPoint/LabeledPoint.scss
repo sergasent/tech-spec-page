@@ -2,8 +2,15 @@
 
 .labeled-point {
   display: flex;
-  gap: 7px;
   align-items: center;
+
+  &_type_small {
+    gap: 7px;
+  }
+
+  &_type_medium {
+    gap: 16px;
+  }
 
   &__figure-square {
     &_color_purple {
@@ -13,13 +20,31 @@
     &_color_green {
       fill: $color-line-green;
     }
+
+    &_color_orange {
+      fill: $color-background-orange;
+    }
+  }
+
+  &__labels-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
 
   &__figure-line {
     stroke-linecap: round;
 
     &_color_light-gray {
+      stroke: $color-line-light-gray;
+    }
+
+    &_color_medium-gray {
       stroke: $color-line-medium-gray;
+    }
+
+    &_color_dark-gray {
+      stroke: $color-line-dark-gray;
     }
   }
 }

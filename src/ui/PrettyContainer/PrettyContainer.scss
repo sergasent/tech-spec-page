@@ -15,7 +15,20 @@
   &_type_analitics {
     left: 640px;
     top: 150px;
-    box-shadow: 0px 60px 45px -30px #32578848;
+    box-shadow: 0px 60px 45px -24px #32578848;
+  }
+
+  &_type_queries {
+    left: 640px;
+    top: 453px;
+  }
+
+  &_type_queries::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: $color-gradient-white;
+    border-radius: 20px;
   }
 
   &__title {
@@ -24,6 +37,10 @@
     margin-bottom: 28px;
     font-size: 10px;
     color: $color-medium-gray;
+
+    &_type_queries {
+      margin-bottom: 26px;
+    }
   }
 
   &__list {
@@ -37,6 +54,24 @@
       box-sizing: border-box;
       gap: 12px;
       align-items: flex-end;
+    }
+
+    &_type_queries {
+      flex-direction: column;
+    }
+  }
+
+  &__list-item {
+    &_type_queries {
+      min-height: 54px;
+      margin-bottom: 18px;
+      box-sizing: border-box;
+      border-bottom: 1px solid $color-light-gray;
+    }
+
+    &_type_queries:last-child {
+      margin-bottom: 0;
+      border-bottom: 0;
     }
   }
 }
