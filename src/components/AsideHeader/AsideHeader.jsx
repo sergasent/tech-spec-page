@@ -10,7 +10,7 @@ import MobileMenu from '../../ui/MobileMenu/MobileMenu';
 
 const AsideHeader = () => {
   const [isContactsPopupOpened, setContactsPopupOpened] = useState(false);
-  const [isMenuOpened, setIsMenuOpened] = useState(true);
+  const [isMenuOpened, setIsMenuOpened] = useState(false);
 
   const handleContactsOpen = () => {
     setContactsPopupOpened(true);
