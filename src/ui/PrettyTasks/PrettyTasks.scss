@@ -1,0 +1,57 @@
+@import '../../constants/variables.scss';
+@import '../../constants/mixines.scss';
+
+.pretty-tasks {
+  &__headers-container {
+    @include clear-list-style;
+    @include main-text-typography;
+    padding-bottom: 11px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid $color-light-gray;
+    font-size: 8px;
+    color: $color-dark-gray;
+    display: flex;
+  }
+
+  &__header:nth-child(1) {
+    margin-right: 210px;
+  }
+
+  &__header:nth-child(2) {
+    margin-right: 122px;
+  }
+
+  &__labeled-point:nth-child(1) {
+    margin-right: 43px;
+  }
+
+  &__labeled-point:nth-child(2),
+  &__labeled-point:nth-child(3) {
+    align-self: flex-start;
+    margin-top: 22px;
+  }
+
+  &__labeled-point:nth-child(3) {
+    margin-left: auto;
+  }
+}
+
+.pretty-container__list-item_type_tasks:last-child {
+  & .pretty-tasks__labeled-point:nth-child(2),
+  & .pretty-tasks__labeled-point:nth-child(3) {
+    align-self: flex-start;
+    margin-top: 8px;
+  }
+}
+
+.pretty-container__list-item_selected {
+  & .pretty-tasks__labeled-point:nth-child(2),
+  & .pretty-tasks__labeled-point:nth-child(3) {
+    @include single-container;
+    margin-top: 7px;
+  }
+
+  & .pretty-tasks__labeled-point:nth-child(2) {
+    margin-right: 34px;
+  }
+}

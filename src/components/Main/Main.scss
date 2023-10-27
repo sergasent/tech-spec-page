@@ -6,6 +6,7 @@
   min-height: 100vh;
   min-height: 100dvh;
   display: flex;
+  overflow: hidden;
 
   &__right-container {
     flex-grow: 1;
@@ -23,6 +24,39 @@
     padding-left: 40px;
     box-sizing: border-box;
     background-color: $color-background-gray;
+  }
+
+  &__circle {
+    position: absolute;
+
+    &_type_small {
+      top: 105px;
+      left: 709px;
+    }
+
+    &_type_medium {
+      top: 301px;
+      left: 894px;
+    }
+
+    &_type_large {
+      top: 737px;
+      left: 991px;
+    }
+  }
+
+  &__icon-label {
+    position: absolute;
+
+    &_first {
+      top: 570px;
+      left: 514px;
+    }
+
+    &_second {
+      top: 149px;
+      left: 1105px;
+    }
   }
 }
 

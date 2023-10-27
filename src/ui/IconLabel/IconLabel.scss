@@ -1,0 +1,52 @@
+@import '../../constants/variables.scss';
+
+$icon-label-line-width: 3px;
+$icon-label-default-color: $color-second-purple;
+
+.icon-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__figure {
+    display: block;
+
+    & circle:nth-child(1) {
+      stroke-width: 0;
+      fill: $color-background-light-gray;
+    }
+
+    & circle:nth-child(2) {
+      fill: none;
+      stroke-width: $icon-label-line-width;
+      stroke-linecap: round;
+      transform-origin: center center;
+      stroke: $icon-label-default-color;
+      stroke-dasharray: 150%;
+      animation: line-round 60s linear infinite;
+    }
+
+    &_color_orange {
+      & circle:nth-child(2) {
+        stroke: $color-background-orange;
+      }
+    }
+  }
+}
+
+@keyframes line-round {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}

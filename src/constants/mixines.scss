@@ -68,3 +68,21 @@
   opacity: 1;
   transition: $visibility-opened-transition;
 }
+
+// Containers
+
+@mixin gradient-layer-white {
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: $color-gradient-white;
+    border-radius: 20px;
+  }
+}
+
+@mixin single-container {
+  padding: 18px 14px;
+  box-shadow: 10px 5px 45px 0px #3257881e;
+  border-radius: 16px;
+}

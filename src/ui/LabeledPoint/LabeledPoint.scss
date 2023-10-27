@@ -12,6 +12,10 @@
     gap: 16px;
   }
 
+  &_type_large {
+    gap: 12px;
+  }
+
   &__figure-square {
     &_color_purple {
       fill: $color-main-purple;
@@ -24,12 +28,24 @@
     &_color_orange {
       fill: $color-background-orange;
     }
+
+    &_color_light-red {
+      fill: $color-background-light-red;
+    }
+
+    &_color_medium-gray {
+      fill: $color-line-medium-gray;
+    }
   }
 
   &__labels-container {
     display: flex;
     flex-direction: column;
     gap: 4px;
+
+    &_type_large {
+      gap: 3px;
+    }
   }
 
   &__figure-line {
@@ -45,6 +61,18 @@
 
     &_color_dark-gray {
       stroke: $color-line-dark-gray;
+    }
+
+    &_color_light-red {
+      stroke: $color-background-light-red;
+    }
+
+    &_color_purple {
+      stroke: $color-main-purple;
+    }
+
+    &_color_orange {
+      stroke: $color-background-orange;
     }
   }
 }

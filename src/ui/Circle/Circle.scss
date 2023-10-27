@@ -1,0 +1,15 @@
+@import '../../constants/variables.scss';
+
+.circle {
+  &_color_purple {
+    fill: $color-main-purple;
+  }
+
+  &_color_orange {
+    fill: $color-background-orange;
+  }
+
+  &_color_dark-orange {
+    fill: $color-background-dark-orange;
+  }
+}

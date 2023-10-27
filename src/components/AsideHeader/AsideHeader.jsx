@@ -24,7 +24,7 @@ const AsideHeader = () => {
       <Link className="header__link header__link_type_language">En</Link>
       <nav>
         <ul className="header__nav-list header__nav-list_type_aside">
-          <li>
+          <li className="header__tel-link-item">
             <a
               href="tel:+74951234567"
               className="header__nav-link header__nav-link_type_aside"

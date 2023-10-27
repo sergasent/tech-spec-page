@@ -8,6 +8,7 @@ const LabeledPoint = ({
   pointColor,
   rectHeight = 10,
   rectBorderRadius = 0,
+  className,
 }) => {
   const defaultLabelHeight = 10;
   return (
@@ -15,6 +16,7 @@ const LabeledPoint = ({
       className={clsx({
         'labeled-point': true,
         [`labeled-point_type_${type}`]: type,
+        [className]: className,
       })}
     >
       <svg
@@ -33,7 +35,12 @@ const LabeledPoint = ({
           strokeWidth="0"
         />
       </svg>
-      <div className="labeled-point__labels-container">
+      <div
+        className={clsx({
+          'labeled-point__labels-container': true,
+          [`labeled-point__labels-container_type_${type}`]: type,
+        })}
+      >
         {labels?.map((label, index) => {
           const key = `label${index}`;
           return (
@@ -87,6 +94,7 @@ LabeledPoint.propTypes = {
   rectHeight: PropTypes.number,
   rectBorderRadius: PropTypes.number,
   pointColor: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default LabeledPoint;

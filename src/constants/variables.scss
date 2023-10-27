@@ -13,6 +13,9 @@ $color-gradient-purple: linear-gradient(45deg, #506ccf 0%, #3453c2 100%);
 $color-gradient-white: linear-gradient(to top, #ffffff 2%, #ffffff28 100%);
 $color-background-gray: #f5f9ff;
 $color-background-orange: #ffc86f;
+$color-background-dark-orange: #ff8b8b;
+$color-background-light-red: #e03e1a;
+$color-background-light-gray: #ecf2fe;
 $color-line-green: #5dcab2;
 $color-line-light-gray: #f3f5f8;
 $color-line-medium-gray: #d6e0f3;
@@ -46,3 +49,7 @@ $visibility-opened-transition:
   opacity 0.3s;
 
 $color-background-padding: #1721445d;
+
+// Diagrams
+
+$magic-number: 6.283185;
