@@ -1,8 +1,27 @@
-# React + Vite
+## Тестовая страница службы поддержки
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Тестовая стартовая страница.
 
-Currently, two official plugins are available:
+[Ссылка на демо вариант](https://sergasent.github.io/tech-spec-page/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Используемые технологии
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![JavaScript](https://img.shields.io/badge/javascript-ccb100.svg?style=for-the-badge&logo=javascript&logoColor=fff) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![SCSS](https://img.shields.io/badge/scss-cc6699.svg?style=for-the-badge&logo=sass&logoColor=white) ![BEM](https://img.shields.io/badge/bem-555555.svg?style=for-the-badge&logo=bem&logoColor=ddd) 
+
+### Дополнительные инструменты
+
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![VITE](https://img.shields.io/badge/VITE-817ffd?style=for-the-badge&logo=vite&logoColor=fff)
+
+### Установка и запуск
+
+```BASH
+git clone https://github.com/sergasent/tech-spec-page.git
+cd tech-spec-page/
+npm i
+```
+
+#### Запуск
+
+```BASH
+npm run start
+```
