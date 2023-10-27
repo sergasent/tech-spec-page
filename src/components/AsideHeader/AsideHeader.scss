@@ -1,0 +1,26 @@
+@import '../../constants/variables.scss';
+@import '../../constants/mixines.scss';
+
+@media screen and (max-width: 1023px) {
+  .aside-header {
+    &__contacts-button {
+      display: none;
+    }
+
+    &__link {
+      @include link-hover;
+      text-decoration: none;
+
+      &:link,
+      &:visited {
+        color: $color-main-white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .aside-header {
+    flex-direction: column;
+  }
+}

@@ -81,3 +81,16 @@
     }
   }
 }
+
+@media screen and (max-width: 640px) {
+  .contacts-popup {
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__contacts-container {
+      margin-bottom: 20px;
+    }
+  }
+}

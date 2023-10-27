@@ -66,3 +66,14 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .header {
+    &__link {
+      &_type_language {
+        order: 1;
+        margin-top: 30px;
+      }
+    }
+  }
+}

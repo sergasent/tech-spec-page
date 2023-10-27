@@ -43,3 +43,13 @@
     line-height: 1.25;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .popup {
+    &__container {
+      min-width: auto;
+      width: 90%;
+      padding: 24px;
+    }
+  }
+}

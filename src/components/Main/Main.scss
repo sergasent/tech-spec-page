@@ -96,3 +96,17 @@
 .aside-section {
   max-width: 396px;
 }
+
+@media screen and (max-width: 1023px) {
+  .main-section {
+    &__title {
+      font-size: 32px;
+      line-height: 1.22;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 1.22;
+    }
+  }
+}
