@@ -1,0 +1,72 @@
+@import '../../constants/variables.scss';
+
+$magic-number: 6.283185;
+$pretty-diagram-diameter: 153px;
+$pretty-diagram-line-width: 8px;
+$pretty-diagram-line-gap: 4px;
+$circumference: calc(($pretty-diagram-diameter / 2) * $magic-number);
+$second-circumference: calc(
+  (
+      $pretty-diagram-diameter / 2 - $pretty-diagram-line-gap -
+        $pretty-diagram-line-width
+    ) * $magic-number
+);
+
+.pretty-diagramm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 26px;
+
+  &__figure {
+    display: block;
+
+    & circle {
+      stroke-width: $pretty-diagram-line-width;
+      fill: none;
+      stroke: $color-line-light-gray;
+      stroke-linecap: round;
+      transform: rotate(-90deg);
+      transform-origin: center center;
+    }
+
+    & circle:nth-child(2) {
+      stroke: $color-second-purple;
+      stroke-dasharray: calc(($circumference / 100) * 80) $circumference;
+      animation: first-line-round 5s ease forwards;
+    }
+
+    & circle:nth-child(4) {
+      stroke: $color-line-green;
+      stroke-dasharray: calc(($second-circumference / 100) * 50)
+        $second-circumference;
+      animation: second-line-round 8s ease forwards;
+    }
+  }
+}
+
+@keyframes first-line-round {
+  0% {
+    stroke-dasharray: calc(($circumference / 100) * 0) $circumference;
+  }
+
+  30% {
+    stroke-dasharray: calc(($circumference / 100) * 95) $circumference;
+  }
+
+  100% {
+    stroke-dasharray: calc(($circumference / 100) * 80) $circumference;
+  }
+}
+
+@keyframes second-line-round {
+  0% {
+    stroke-dasharray: calc(($second-circumference / 100) * 0)
+      $second-circumference;
+  }
+
+  100% {
+    stroke-dasharray: calc(($second-circumference / 100) * 50)
+      $second-circumference;
+  }
+}

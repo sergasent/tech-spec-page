@@ -1,0 +1,42 @@
+@import '../../constants/variables.scss';
+@import '../../constants/mixines.scss';
+
+.pretty-container {
+  padding: 16px 18px;
+  box-sizing: border-box;
+  background-color: $color-main-white;
+  border-radius: 20px;
+  position: absolute;
+
+  &_size_medium {
+    min-width: 231px;
+  }
+
+  &_type_analitics {
+    left: 640px;
+    top: 150px;
+    box-shadow: 0px 60px 45px -30px #32578848;
+  }
+
+  &__title {
+    @include clear-margin-padding;
+    @include main-text-typography;
+    margin-bottom: 28px;
+    font-size: 10px;
+    color: $color-medium-gray;
+  }
+
+  &__list {
+    @include clear-list-style;
+    display: flex;
+
+    &_type_analitics {
+      min-height: 27px;
+      padding-bottom: 2px;
+      border-top: 1px solid $color-light-gray;
+      box-sizing: border-box;
+      gap: 12px;
+      align-items: flex-end;
+    }
+  }
+}

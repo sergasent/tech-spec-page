@@ -3,6 +3,7 @@ import AsideHeader from '../AsideHeader/AsideHeader';
 import MainHeader from '../MainHeader/MainHeader';
 import Button from '../../ui/Button/Button';
 import downImage from '../../assets/bi_arrow-down-short.svg';
+import PrettyAnalitics from '../../ui/PrettyAnalitics/PrettyAnalitics';
 
 const Main = () => {
   return (
@@ -25,6 +26,7 @@ const Main = () => {
               <img src={downImage} alt="Далее" />
             </Button>
           </main>
+          <PrettyAnalitics />
         </section>
       </div>
       <div className="main__right-container">

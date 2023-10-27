@@ -1,0 +1,25 @@
+@import '../../constants/variables.scss';
+
+.labeled-point {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+
+  &__figure-square {
+    &_color_purple {
+      fill: $color-main-purple;
+    }
+
+    &_color_green {
+      fill: $color-line-green;
+    }
+  }
+
+  &__figure-line {
+    stroke-linecap: round;
+
+    &_color_light-gray {
+      stroke: $color-line-medium-gray;
+    }
+  }
+}
