@@ -23,5 +23,5 @@ npm i
 #### Запуск
 
 ```BASH
-npm run start
+npm run dev
 ```
